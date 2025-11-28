@@ -55,7 +55,7 @@ def generate_story(api_key, child_name, topic, language_name):
     """Генерирует текст сказки через Google Gemini."""
     try:
         genai.configure(api_key=api_key)
-        model = genai.GenerativeModel('gemini-pro')
+        model = genai.GenerativeModel('gemini-1.5-flash')
 
         # Промпт для ИИ
         prompt = f"""
@@ -142,4 +142,5 @@ if st.button(t["button"], type="primary", use_container_width=True):
                     img_url = get_image_url(img_prompt)
                     st.image(img_url, use_column_width=True)
         else:
+
             st.error("Error/Ошибка: Проверьте API Key или VPN.")
