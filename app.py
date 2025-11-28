@@ -34,7 +34,7 @@ TRANSLATIONS = {
         "image_loading": "🎨 Художник малює ілюстрацію...",
         "success": "Казка готова!",
         "error_key": "Вкажіть API ключ у налаштуваннях зліва!"
-    }
+    },
     "English": {
         "title": "✨ Magic Story Generator",
         "desc": "Enter a name and topic, AI will create a story and a picture!",
@@ -46,7 +46,7 @@ TRANSLATIONS = {
         "image_loading": "🎨 Drawing the illustration...",
         "success": "Story is ready!",
         "error_key": "Please enter API Key in settings!"
-    },
+    }
 }
 
 # --- ФУНКЦИИ ---
@@ -139,6 +139,7 @@ if st.button(t["button"], type="primary", use_container_width=True):
         else:
 
             st.error("Error/Ошибка: Проверьте API Key или VPN.")
+
 
 
 
