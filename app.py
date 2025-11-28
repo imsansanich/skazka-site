@@ -11,7 +11,7 @@ st.set_page_config(
 
 # --- ПЕРЕВОДЫ (RU, EN, UKR) ---
 TRANSLATIONS = {
-    "Русский 🇷🇺": {
+    "Русский": {
         "title": "✨ Генератор сказок",
         "desc": "Введи имя и тему, а ИИ придумает сказку и нарисует картинку!",
         "name_label": "Как зовут ребенка?",
@@ -23,19 +23,7 @@ TRANSLATIONS = {
         "success": "Сказка готова!",
         "error_key": "Укажите API ключ в настройках слева!"
     },
-    "English 🇺🇸": {
-        "title": "✨ Magic Story Generator",
-        "desc": "Enter a name and topic, AI will create a story and a picture!",
-        "name_label": "Child's name?",
-        "topic_label": "What is the story about?",
-        "topic_placeholder": "E.g. space adventure",
-        "button": "🚀 Generate Story!",
-        "loading": "🧙‍♂️ The Storyteller is writing...",
-        "image_loading": "🎨 Drawing the illustration...",
-        "success": "Story is ready!",
-        "error_key": "Please enter API Key in settings!"
-    },
-    "Українська 🇺🇦": {
+    "Українська": {
         "title": "✨ Генератор казок",
         "desc": "Введи ім'я та тему, а ШІ вигадає казку та намалює малюнок!",
         "name_label": "Як звати дитину?",
@@ -47,6 +35,18 @@ TRANSLATIONS = {
         "success": "Казка готова!",
         "error_key": "Вкажіть API ключ у налаштуваннях зліва!"
     }
+    "English": {
+        "title": "✨ Magic Story Generator",
+        "desc": "Enter a name and topic, AI will create a story and a picture!",
+        "name_label": "Child's name?",
+        "topic_label": "What is the story about?",
+        "topic_placeholder": "E.g. space adventure",
+        "button": "🚀 Generate Story!",
+        "loading": "🧙‍♂️ The Storyteller is writing...",
+        "image_loading": "🎨 Drawing the illustration...",
+        "success": "Story is ready!",
+        "error_key": "Please enter API Key in settings!"
+    },
 }
 
 # --- ФУНКЦИИ ---
@@ -139,5 +139,6 @@ if st.button(t["button"], type="primary", use_container_width=True):
         else:
 
             st.error("Error/Ошибка: Проверьте API Key или VPN.")
+
 
 
