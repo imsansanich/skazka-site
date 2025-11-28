@@ -98,6 +98,11 @@ with st.sidebar:
     selected_lang = st.selectbox("Language / Язык", list(TRANSLATIONS.keys()))
     
     st.divider()
+    # Пытаемся достать ключ из секретов
+    if "GOOGLE_API_KEY" in st.secrets:
+        api_key = st.secrets["GOOGLE_API_KEY"]
+    else:
+        api_key = None
 
 # 2. Основная часть
 t = TRANSLATIONS[selected_lang] # Берем переводы для выбранного языка
@@ -139,6 +144,7 @@ if st.button(t["button"], type="primary", use_container_width=True):
         else:
 
             st.error("Error/Ошибка: Проверьте API Key или VPN.")
+
 
 
 
