@@ -21,7 +21,7 @@ TRANSLATIONS = {
         "loading": "🧙‍♂️ Сказочник сочиняет историю...",
         "image_loading": "🎨 Художник рисует иллюстрацию...",
         "success": "Сказка готова!",
-        "error_key": "Укажите API ключ в настройках слева!"
+        "error_key": "Пу-пу-пу, шось не то"
     },
     "Українська": {
         "title": "✨ Генератор казок",
@@ -33,7 +33,7 @@ TRANSLATIONS = {
         "loading": "🧙‍♂️ Казкар складає історію...",
         "image_loading": "🎨 Художник малює ілюстрацію...",
         "success": "Казка готова!",
-        "error_key": "Вкажіть API ключ у налаштуваннях зліва!"
+        "error_key": "Пу-пу-пу, шось не то"
     },
     "English": {
         "title": "✨ Magic Story Generator",
@@ -45,7 +45,7 @@ TRANSLATIONS = {
         "loading": "🧙‍♂️ The Storyteller is writing...",
         "image_loading": "🎨 Drawing the illustration...",
         "success": "Story is ready!",
-        "error_key": "Please enter API Key in settings!"
+        "error_key": "Пу-пу-пу, шось не то"
     }
 }
 
@@ -144,6 +144,7 @@ if st.button(t["button"], type="primary", use_container_width=True):
         else:
 
             st.error("Error/Ошибка: Проверьте API Key или VPN.")
+
 
 
 
