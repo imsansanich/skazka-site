@@ -9,7 +9,7 @@ st.set_page_config(
     layout="centered"
 )
 
-# --- ПЕРЕВОДЫ (RU, EN, UKR) ---
+# --- ПЕРЕВОДЫ ---
 TRANSLATIONS = {
     "Русский": {
         "title": "✨ Генератор сказок",
@@ -143,7 +143,8 @@ if st.button(t["button"], type="primary", use_container_width=True):
                     st.image(img_url, use_column_width=True)
         else:
 
-            st.error("Error/Ошибка: Проверьте API Key или VPN.")
+            st.error("Error/Ошибка: Проверьте API Key.")
+
 
 
 
